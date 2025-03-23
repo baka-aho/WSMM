@@ -1,8 +1,11 @@
 # WSMM - Waves Skin Mod Manager
+![light-mode](https://github.com/user-attachments/assets/46b41d3b-7daa-4c9d-80fb-77abd4b2ba71)
+
 
 A skin mod manager for Wuthering waves made with electron.js. This was a reference from [JASM](https://github.com/Jorixon/JASM/blob/main/README.md) a similar skin mod manager which supports multiple games.
 
 **This is still in an early stage of development. Make backups and use at your own risk ⚠️** 
+
 
 ## Features
 - Pretty and Customizable/Custom CSS UI

@@ -32,6 +32,6 @@ You can either install the installer or portable version.
 
 - Changing the app's theme causes flickering in colors.
 - Some bugs main menu where charcter list loads twice `Refresh Mods` usually fixes it
-- App settings are stored here ```C:\Users\<username>\AppData\Roaming/waves-skin-mod-manager```
+- App settings are stored here ```C:\Users\<username>\AppData\Roaming\waves-skin-mod-manager```
 - Mod specific settings are stored within the mod folder themselves and are prefixed with ```.WSMM_```. idk i will try to add a config.json like JASM later on
 

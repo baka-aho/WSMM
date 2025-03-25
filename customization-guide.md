@@ -12,96 +12,74 @@ Below are the CSS variables defined for the custom theme, each with a visual exa
 
 <details>
 <summary><code>--background-color: grey;</code></summary>
-<br>
-![Background Color Grey](https://via.placeholder.com/300x200/grey/ffffff?text=Background+Grey)
+  
+![background grey](https://github.com/user-attachments/assets/c021230f-724b-4b7f-b2a3-2dcac85607f2)
+
 </details>
 
 <details>
-<summary><code>--primary-color: white;</code></summary>
-<br>
-![Primary Color White](https://via.placeholder.com/300x200/ffffff/000000?text=Primary+White)
+<summary><code>--primary-color: crimson;</code></summary>
+  
+![{F15A94B6-E31F-44D3-BB1D-042EA50CEA22}](https://github.com/user-attachments/assets/71ab30cb-fe0c-4839-8912-8bc26555827d)
+
 </details>
 
 <details>
-<summary><code>--title-color: white;</code></summary>
-<br>
-![Title Color White](https://via.placeholder.com/300x200/000000/ffffff?text=Title+White)
+<summary><code>--title-color: lime;</code></summary>
+  
+![{E8867F23-E72D-43E4-B3EE-C8B911B33275}](https://github.com/user-attachments/assets/dea377c6-9740-4007-9527-2297de7d17d3)
+
 </details>
 
 <details>
-<summary><code>--accent-color: rgba(0, 23, 0, 0.5);</code></summary>
-<br>
-![Accent Color](https://via.placeholder.com/300x200/00170080/ffffff?text=Accent+RGBA(0,23,0,0.5))
+<summary><code>--accent-color: rgba(55, 25, 90, 0.8);</code></summary>
+  
+![{BAADD6DA-D02D-4922-97B9-3C5A17FBFB58}](https://github.com/user-attachments/assets/d749cfe0-6ba4-4a9f-ae2b-a789ebd8a09b)
+
 </details>
 
 <details>
 <summary><code>--card-background: rgba(55, 65, 81, 0.7);</code></summary>
-<br>
-![Card Background](https://via.placeholder.com/300x200/374151B3/ffffff?text=Card+RGBA(55,65,81,0.7))
+  
+![{AA04E80B-ED49-410D-9D65-17FEB0F8873A}](https://github.com/user-attachments/assets/184ce9f0-66b7-4ceb-b3b8-5bfdb1aabf9c)
+
 </details>
 
-<details>
-<summary><code>--primary-text-color: red;</code></summary>
-<br>
-![Primary Text Color Red](https://via.placeholder.com/300x200/ffffff/ff0000?text=Primary+Text+Red)
-</details>
+<code>--primary-text-color: #ffffff;</code> changes primary text color
 
-<details>
-<summary><code>--secondary-text-color: blue;</code></summary>
-<br>
-![Secondary Text Color Blue](https://via.placeholder.com/300x200/ffffff/0000ff?text=Secondary+Text+Blue)
-</details>
+<code>--secondary-text-color: white;</code> changes secondary text color i.e headers
 
-<details>
-<summary><code>--scrollbar-color: pink;</code></summary>
-<br>
-![Scrollbar Color Pink](https://via.placeholder.com/300x200/ffffff/ffc1cc?text=Scrollbar+Pink)
-</details>
+<code>--scrollbar-color: pink;</code> changes scrollbar color
 
 <details>
 <summary><code>--mod-enabled-color: yellow;</code></summary>
-<br>
-![Mod Enabled Color Yellow](https://via.placeholder.com/300x200/000000/ffff00?text=Mod+Enabled+Yellow)
+  
+![{912019E5-E771-4633-A0D4-3C84B34072B7}](https://github.com/user-attachments/assets/72dabebd-55b3-4999-af4e-68103b027eaa)
+
 </details>
 
 <details>
 <summary><code>--mod-error-color: red;</code></summary>
-<br>
-![Mod Error Color Red](https://via.placeholder.com/300x200/000000/ff0000?text=Mod+Error+Red)
+  
+![{163398ED-8ACC-47A1-8E1A-2601EF75E353}](https://github.com/user-attachments/assets/dc0474f5-2e3e-4809-80fc-d50953ca5499)
+
 </details>
 
 <details>
 <summary><code>--drag-drop-color: #00ff00;</code></summary>
-<br>
-![Drag Drop Color Green](https://via.placeholder.com/300x200/000000/00ff00?text=Drag+Drop+Green)
+  
+![{42B8D72A-2019-4536-89C8-A35352DAF45F}](https://github.com/user-attachments/assets/66cb1f0d-af2e-42c6-b579-a0fec3be7488)
+
 </details>
 
 <details>
-<summary><code>--font-family: "Annie Use Your Telescope", cursive;</code></summary>
-<br>
-![Font Family](https://via.placeholder.com/300x200/ffffff/000000?text=Font+Annie+Use+Your+Telescope)
+<summary><code>--font-family: "Bytesized";</code></summary>
+  
+![{8C32D1F8-371E-44EE-A099-A8DDF263A157}](https://github.com/user-attachments/assets/7b5b6da0-0fd5-4868-8dfd-d5942211882b)
+
+you can also use <code>--font-family: "Bytesized", cursive;</code>
 </details>
 
-<details>
-<summary><code>--mod-count-color: white;</code></summary>
-<br>
-![Mod Count Color White](https://via.placeholder.com/300x200/000000/ffffff?text=Mod+Count+White)
-</details>
 
-<details>
-<summary><code>--header-buttons-color: rgba(55, 65, 81, 0.7);</code></summary>
-<br>
-![Header Buttons Color](https://via.placeholder.com/300x200/374151B3/ffffff?text=Header+Buttons+RGBA(55,65,81,0.7))
-</details>
 
-<details>
-<summary><code>--header-button-text-color: white;</code></summary>
-<br>
-![Header Button Text Color White](https://via.placeholder.com/300x200/374151/ffffff?text=Header+Button+Text+White)
-</details>
 
-<details>
-<summary><code>--box-shadow: rgba(0, 0, 0, 0.5);</code></summary>
-<br>
-![Box Shadow](https://via.placeholder.com/300x200/ffffff/000000?text=Box+Shadow+RGBA(0,0,0,0.5))
-</details>

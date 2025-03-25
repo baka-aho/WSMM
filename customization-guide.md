@@ -46,6 +46,17 @@ Below are the CSS variables defined for the custom theme, each with a visual exa
 
 <code>--box-shadow: rgba(0, 0, 0, 0.5);</code>
 
+### Card Slider custom height and width
+
+![{B5E7F24D-E608-4DAF-A91A-ED01624FFF34}](https://github.com/user-attachments/assets/0d3ff467-fbcf-4eff-8f6f-354c553884cf)
+
+
+### Transparency
+
+<code>--property: transparent;</code>
+
+
+
 
 
 

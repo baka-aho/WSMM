@@ -14,91 +14,41 @@
 
 Below are the CSS variables defined for the custom theme, each with a visual example.
 
-<details>
-<summary><code>--background-color: grey;</code></summary>
-  
-![background grey](https://github.com/user-attachments/assets/c021230f-724b-4b7f-b2a3-2dcac85607f2)
+<code>--background-color: grey;</code>
 
-</details>
+<code>--primary-color: crimson;</code>
 
-<details>
-<summary><code>--primary-color: crimson;</code></summary>
-  
-![{F15A94B6-E31F-44D3-BB1D-042EA50CEA22}](https://github.com/user-attachments/assets/71ab30cb-fe0c-4839-8912-8bc26555827d)
+<code>--title-color: lime;</code>
 
-</details>
+<code>--accent-color: rgba(55, 25, 90, 0.8);</code>
 
-<details>
-<summary><code>--title-color: lime;</code></summary>
-  
-![{E8867F23-E72D-43E4-B3EE-C8B911B33275}](https://github.com/user-attachments/assets/dea377c6-9740-4007-9527-2297de7d17d3)
+<code>--card-background: rgba(55, 65, 81, 0.7);</code>
 
-</details>
+<code>--primary-text-color: #ffffff;</code>
 
-<details>
-<summary><code>--accent-color: rgba(55, 25, 90, 0.8);</code></summary>
-  
-![{BAADD6DA-D02D-4922-97B9-3C5A17FBFB58}](https://github.com/user-attachments/assets/d749cfe0-6ba4-4a9f-ae2b-a789ebd8a09b)
+<code>--secondary-text-color: white;</code>
 
-</details>
+<code>--scrollbar-color: pink;</code>
 
-<details>
-<summary><code>--card-background: rgba(55, 65, 81, 0.7);</code></summary>
-  
-![{AA04E80B-ED49-410D-9D65-17FEB0F8873A}](https://github.com/user-attachments/assets/184ce9f0-66b7-4ceb-b3b8-5bfdb1aabf9c)
+<code>--mod-enabled-color: yellow;</code>
 
-</details>
+<code>--mod-error-color: red;</code>
 
-<code>--primary-text-color: #ffffff;</code> changes primary text color
+<code>--drag-drop-color: #00ff00;</code>
 
-<code>--secondary-text-color: white;</code> changes secondary text color i.e headers
-
-<code>--scrollbar-color: pink;</code> changes scrollbar color
-
-<details>
-<summary><code>--mod-enabled-color: yellow;</code></summary>
-  
-![{912019E5-E771-4633-A0D4-3C84B34072B7}](https://github.com/user-attachments/assets/72dabebd-55b3-4999-af4e-68103b027eaa)
-
-</details>
-
-<details>
-<summary><code>--mod-error-color: red;</code></summary>
-  
-![{163398ED-8ACC-47A1-8E1A-2601EF75E353}](https://github.com/user-attachments/assets/dc0474f5-2e3e-4809-80fc-d50953ca5499)
-
-</details>
-
-<details>
-<summary><code>--drag-drop-color: #00ff00;</code></summary>
-  
-![{42B8D72A-2019-4536-89C8-A35352DAF45F}](https://github.com/user-attachments/assets/66cb1f0d-af2e-42c6-b579-a0fec3be7488)
-
-</details>
-
-<details>
-<summary><code>--font-family: "Bytesized";</code></summary>
-  
-![{8C32D1F8-371E-44EE-A099-A8DDF263A157}](https://github.com/user-attachments/assets/7b5b6da0-0fd5-4868-8dfd-d5942211882b)
+<code>--font-family: "Bytesized";</code>
 
 you can also use <code>--font-family: "Bytesized", cursive;</code>
-</details>
 
 <code>--mod-count-color: white;</code> changes mod count color
 
-<details>
-<summary><code>--header-buttons-color: rgba(55, 65, 81, 0.7);</code></summary>
-  
-![{9E7CE036-C429-4657-8984-E12CDCFA1083}](https://github.com/user-attachments/assets/f0c6ed3e-13eb-4b70-959d-72f3dc6f1b8c)
+<code>--header-buttons-color: rgba(55, 65, 81, 0.7);</code>
 
-</details>
+<code>--header-button-text-color: rgba(55, 65, 81, 0.7);</code>
 
-<details>
-<summary><code>--header-button-text-color: rgba(55, 65, 81, 0.7);</code></summary>
-  
-![{9E7CE036-C429-4657-8984-E12CDCFA1083}](https://github.com/user-attachments/assets/f0c6ed3e-13eb-4b70-959d-72f3dc6f1b8c)
+<code>--box-shadow: rgba(0, 0, 0, 0.5);</code>
 
-</details>
+
 
 
 

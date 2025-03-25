@@ -36,9 +36,7 @@ Below are the CSS variables defined for the custom theme, each with a visual exa
 
 <code>--drag-drop-color: #00ff00;</code>
 
-<code>--font-family: "Bytesized";</code>
-
-you can also use <code>--font-family: "Bytesized", cursive;</code>
+<code>--font-family: "Bytesized";</code> you can also use <code>--font-family: "Bytesized", cursive;</code>
 
 <code>--mod-count-color: white;</code> changes mod count color
 

@@ -80,6 +80,21 @@ Below are the CSS variables defined for the custom theme, each with a visual exa
 you can also use <code>--font-family: "Bytesized", cursive;</code>
 </details>
 
+<code>--mod-count-color: white;</code> changes mod count color
+
+<details>
+<summary><code>--header-buttons-color: rgba(55, 65, 81, 0.7);</code></summary>
+  
+![{9E7CE036-C429-4657-8984-E12CDCFA1083}](https://github.com/user-attachments/assets/f0c6ed3e-13eb-4b70-959d-72f3dc6f1b8c)
+
+</details>
+
+<details>
+<summary><code>--header-button-text-color: rgba(55, 65, 81, 0.7);</code></summary>
+  
+![{9E7CE036-C429-4657-8984-E12CDCFA1083}](https://github.com/user-attachments/assets/f0c6ed3e-13eb-4b70-959d-72f3dc6f1b8c)
+
+</details>
 
 
 

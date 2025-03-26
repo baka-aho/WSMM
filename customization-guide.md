@@ -1,7 +1,3 @@
-## not applicable right now in next version
-
-
-
 # Customization Guide
 
 ### Custom theme

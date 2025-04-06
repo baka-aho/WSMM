@@ -23,6 +23,8 @@ A skin mod manager for Wuthering waves made with electron.js. This was a referen
 ## Download
 Latest release can be downloaded from the [Releases](https://github.com/baka-aho/WSMM/releases) page. To start the app run ```Waves Skin Mod Manager.exe```, I suggest creating a shortcut to it.
 You can either install the installer or portable version.
+
+Note: Run the app with admin permission, it has "focus_game.exe", "get_active_window.exe", "game_title.exe" which needs to be ran by the app to work.
 ## Requirements
 - 
 

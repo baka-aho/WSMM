@@ -53,14 +53,14 @@ body::before {
 }
 
 .alert {
-  display: none; /* Hidden by default */
+  display: none; 
   position: fixed;
   z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .alert-content {
@@ -611,7 +611,7 @@ input:checked + .slider:before {
 }
 
 .select-selected.select-active::after {
-  transform: translateY(-50%) rotate(180deg); /* Flips up when active */
+  transform: translateY(-50%) rotate(180deg); 
 }
 
 .select-items {
@@ -786,7 +786,6 @@ input:checked + .slider:before {
   background: #1e3d1e;
 }
 
-/* Add to styles.css */
 .context-menu {
   position: absolute;
   background: rgba(55, 65, 81, 0.7);

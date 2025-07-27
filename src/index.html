@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Waves Skin Mod Manager</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        hljs.highlightAll();
+      });
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="drag-area" class="draggable-area"></div>
+    <div id="custom-alert" class="alert">
+      <div class="alert-content">
+        <span id="alert-message">This is a custom alert!</span>
+        <button id="close-alert">OK</button>
+      </div>
+    </div>
+    <h1 id="title">Waves Skin Mod Manager</h1>
+    <div id="main-container">
+      <div class="header">
+        <h1>Character Overview</h1>
+        <div class="controls">
+          <div class="icon-buttons">
+            <button title="Fusion">
+              <i class="fas fa-fire text-yellow-500" style="color: #c62b4d"></i>
+            </button>
+            <button title="Glacio">
+              <i
+                class="fas fa-snowflake text-blue-300"
+                style="color: #39b1d1"
+              ></i>
+            </button>
+            <button title="Electro">
+              <i class="fas fa-bolt text-blue-500" style="color: #a632b0"></i>
+            </button>
+            <button title="Aero">
+              <i class="fas fa-wind text-green-500" style="color: #63e6be"></i>
+            </button>
+            <button title="Havoc">
+              <i class="fas fa-moon text-red-500" style="color: #991655"></i>
+            </button>
+            <button title="Spectro">
+              <i class="fas fa-sun text-purple-500" style="color: #baa71d"></i>
+            </button>
+          </div>
+          <button id="settings-btn"><i class="fas fa-cog"></i></button>
+        </div>
+      </div>
+      <div class="header">
+        <div class="controls"></div>
+        <div class="controls">
+          <span style="font-size: 1.3em">Sort by:</span>
+          <select>
+            <option>Alphabetical</option>
+          </select>
+
+          <button onclick="refreshMod()">Refresh Mods</button>
+          <button id="start-xxmi">Start XXMI</button>
+          <button id="start-game">Start Game</button>
+          <button id="view" class="character-c">View</button>
+          <input placeholder="Search Characters..." type="text" />
+        </div>
+      </div>
+      <div class="character-grid" id="character-grid">
+        <!-- Character Cards -->
+      </div>
+      <div id="mod-grid" class="mod-grid"></div>
+    </div>
+    <div id="settings" class="hidden">
+      <div class="header">
+        <h1>Settings Overview</h1>
+        <div class="controls">
+          <button id="back-to-characters">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+        </div>
+      </div>
+      <div class="settings-content">
+        <div id="menu">
+          <button class="menu-item active" data-target="general-settings">
+            General
+          </button>
+          <button class="menu-item" data-target="appearance-settings">
+            Appearance
+          </button>
+          <button class="menu-item" data-target="advanced-settings">
+            Advanced
+          </button>
+        </div>
+        <div id="menu-content">
+          <div id="general-settings" class="content-section active">
+            <h2>General Settings</h2>
+            <div class="setting-item">
+              <label for="mod-dir">Mod Directory:</label>
+              <input
+                type="text"
+                id="mod-dir"
+                placeholder="enter mod directory path"
+              />
+              <button id="browse-mod-dir">Browse</button>
+            </div>
+            <div class="setting-item">
+              <label for="auto-refresh">Auto-Refresh Mods:</label>
+              <label class="switch">
+                <input type="checkbox" id="auto-refresh" checked disabled />
+                <span class="slider" style="opacity: 0.5"></span>
+              </label>
+            </div>
+            <div class="setting-item">
+              <label for="xxmi-dir">XXMI Executable:</label>
+              <input
+                type="text"
+                id="xxmi-dir"
+                placeholder="enter xxmi executable path"
+              />
+              <button id="xxmi-exe-dir">Browse</button>
+            </div>
+            <div class="setting-item">
+              <label for="game-dir">Game Executable:</label>
+              <input
+                type="text"
+                id="game-dir"
+                placeholder="enter game executable path"
+              />
+              <button id="game-exe-dir">Browse</button>
+            </div>
+          </div>
+          <div id="appearance-settings" class="content-section">
+            <h2>Appearance Settings</h2>
+            <div class="setting-item">
+              <label for="theme-toggle">Theme:</label>
+              <div class="custom-select">
+                <div class="select-selected" id="theme-toggle-selected">
+                  Light
+                </div>
+                <div class="select-items select-hide" id="theme-options">
+                  <div data-value="light">Light</div>
+                  <div data-value="dark">Dark</div>
+                </div>
+              </div>
+            </div>
+            <div class="setting-item">
+              <label for="custom-theme-toggle">Enable Custom Theme:</label>
+              <label class="switch">
+                <input type="checkbox" id="custom-theme-toggle" />
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div
+              class="setting-item"
+              id="custom-theme-options"
+              style="display: none"
+            >
+              <label for="custom-theme-input">Custom Theme CSS:</label>
+              <div class="custom-theme-container">
+                <textarea
+                  id="custom-theme-input"
+                  placeholder='--background-color: #ccffcc;\n--primary-color: #ccffcc;\n--title-color: #2f4f2f;\n--accent-color: rgba(55, 65, 81, 0.7);\n--card-background: rgba(55, 65, 81, 0.7);\n--primary-text-color: #ffffff;\n--secondary-text-color: #2f4f2f;\n--scrollbar-color: #2f4f2f;\n--mod-enabled-color: yellow;\n--mod-error-color: red;\n--drag-drop-color: #00ff00;\n--font-family: "Annie Use Your Telescope", cursive;\n--mod-count-color: white;\n--header-buttons-color: rgba(55, 65, 81, 0.7);\n--header-button-text-color: white;\n--box-shadow: rgba(0, 0, 0, 0.5);"
+                  rows="10"
+                  style="width: 100%; resize: vertical'
+                ></textarea>
+                <div class="custom-theme-preview">
+                  <pre><code class="language-css" id="custom-theme-preview"></code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="advanced-settings" class="content-section">
+            <h2>Advanced Settings</h2>
+            <p>
+              Advanced settings can go here (e.g., backup options, logging).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Dialogs -->
+    <div id="rename-dialog" class="dialog" style="display: none">
+      <div class="dialog-content">
+        <h2>Rename Mod</h2>
+        <input type="text" id="rename-input" placeholder="Enter new mod name" />
+        <div class="dialog-buttons">
+          <button id="rename-cancel">Cancel</button>
+          <button id="rename-confirm">Rename</button>
+        </div>
+      </div>
+    </div>
+    <div id="move-dialog" class="dialog" style="display: none">
+      <div class="dialog-content">
+        <h2>Move Mod</h2>
+        <select id="move-select">
+          <option value="">Select a character</option>
+          <!-- Options  -->
+        </select>
+        <div class="dialog-buttons">
+          <button id="move-cancel">Cancel</button>
+          <button id="move-confirm">Move</button>
+        </div>
+      </div>
+    </div>
+    <div id="delete-dialog" class="dialog" style="display: none">
+      <div class="dialog-content">
+        <h2>Delete Mod</h2>
+        <p id="delete-message">Are you sure you want to delete this mod?</p>
+        <div class="dialog-buttons">
+          <button id="delete-cancel">Cancel</button>
+          <button id="delete-confirm">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Context Menu -->
+    <div id="custom-context-menu" class="context-menu" style="display: none">
+      <div class="context-menu-item" data-action="change-icon">Change Icon</div>
+      <div class="context-menu-item" data-action="rename">Rename</div>
+      <div class="context-menu-item" data-action="delete">Delete</div>
+      <div class="context-menu-item" data-action="move">Move</div>
+    </div>
+
+    <div
+      id="resize-context-menu"
+      class="resize-context-menu"
+      style="display: none"
+    >
+      <div class="slider-container">
+        <label for="widthSlider">Width: <span id="widthValue"></span>px</label>
+        <input type="range" id="widthSlider" value="100" />
+      </div>
+      <div class="slider-container">
+        <label for="heightSlider"
+          >Height: <span id="heightValue"></span>px</label
+        >
+        <input type="range" id="heightSlider" value="100" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

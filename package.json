@@ -1,0 +1,86 @@
+{
+  "name": "waves-skin-mod-manager",
+  "version": "1.2.0",
+  "main": "main.js",
+  "description": "A skin mod manager for Wuthering Waves",
+  "author": "ahobaka",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development electron .",
+    "build": "cross-env NODE_ENV=production electron-builder --win --x64"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "electron": "^28.2.2",
+    "electron-builder": "^24.13.3",
+    "electron-reload": "^2.0.0-alpha.1"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.1.2",
+    "chokidar": "^3.6.0",
+    "jszip": "^3.10.1",
+    "node-unrar-js": "^2.0.2"
+  },
+  "build": {
+    "appId": "com.ahobaka.wavesskinmodmanager",
+    "productName": "Waves Skin Mod Manager",
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "src/icons/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "artifactName": "WavesSkinModManager-Setup-${version}.${ext}",
+      "installerIcon": "src/icons/icon.ico",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "runAfterFinish": true
+    },
+    "portable": {
+      "artifactName": "WavesSkinModManager-Portable-${version}.zip"
+    },
+    "files": [
+      "main.js",
+      "src/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "utils",
+        "to": "utils",
+        "filter": [
+          "*.exe"
+        ]
+      },
+      {
+        "from": "src/icons/character-icon/",
+        "to": "src/icons/character-icon/",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "src/icons/back.svg",
+        "to": "src/icons/back.svg"
+      }
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "asar": true
+  }
+}
